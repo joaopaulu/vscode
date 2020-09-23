@@ -13,24 +13,29 @@
     "source.fixAll.eslint": true
   },
 
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "node_modules": false
+  },
+
   "explorer.compactFolders": false,
   "editor.renderLineHighlight": "gutter",
   "workbench.editor.labelFormat": "short",
   "extensions.ignoreRecommendations": true,
 
-  "javascript.updateImportsOnFileMove.enabled": "never",
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "never",
 
   "breadcrumbs.enabled": true,
   "editor.parameterHints.enabled": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  
+
   "editor.rulers": [80, 120],
-  
-  
-  "files.autoSave": "onWindowChange",
- 
 
   "files.associations": {
     ".sequelizerc": "javascript",
@@ -40,7 +45,9 @@
 
   "window.zoomLevel": 0,
 
-  
+  "emmet.syntaxProfiles": { "javascript": "jsx" },
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
@@ -53,7 +60,7 @@
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
   "liveServer.settings.donotShowInfoMsg": true,
-  "material-icon-theme.activeIconPack": "nest",
+  // "material-icon-theme.activeIconPack": "nest",
   "screencastMode.onlyKeyboardShortcuts": true,
 
   "material-icon-theme.folders.associations": {
@@ -80,21 +87,10 @@
   },
 
   "workbench.colorTheme": "Omni",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "tabnine.experimentalAutoImports": true,
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  
+  }
 }
